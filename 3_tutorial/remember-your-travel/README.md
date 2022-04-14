@@ -2,7 +2,7 @@
 
 Create a website using HTML and CSS with the structure displayed below. 
 
-You can use this version as an example https://chipper-otter-9ad799.netlify.app/ but also feel free to be creative and try different fonts, colors, images (sample ones available in ```./assets```) or also website idea (important is to follow the HTML structure offered).
+You can use [this version](https://remeber-your-travel-kmeq6ptqq-katerinafedotova.vercel.app/) as an example but also feel free to be creative and try different fonts, colors, images (sample ones available in ```./assets```) or also website idea (important is to follow the HTML structure offered).
 
 ## Important
 Please do development in the **separate branch** (e.g., ```develop```). As soon as you are finished, create a Pull Request to ```main``` branch and add me ([katerinafedotova](https://github.com/katerinafedotova)) as your reviewer. DO NOT merge the Pull Request.

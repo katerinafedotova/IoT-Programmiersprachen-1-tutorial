@@ -1,0 +1,61 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Rubik', sans-serif;
+    background-image: url('./gradient-background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 17px;
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 40px;
+}
+
+.header-menu {
+    display: flex;
+    padding: 16px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    column-gap: 16px;
+    list-style-type: none;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    flex-basis: 80%;
+    padding: 20px;
+}
+
+aside {
+    flex-basis: 20%;
+    padding: 20px;
+    border-left: 1px solid rgb(0, 0, 0);
+}
+
+.useful-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+footer {
+    margin: 0 auto;
+    padding: 20px;
+}

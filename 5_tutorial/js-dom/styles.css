@@ -1,0 +1,38 @@
+body {
+    background-color: antiquewhite;
+}
+
+#add-btn,
+#remove-btn {
+    margin: 1rem;
+    padding: 0.75rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#add-btn {
+    background-color: #52cba3;
+    border: 1px solid #054f05;
+}
+
+#remove-btn {
+    background-color: #b1223c;
+    border: 1px solid #770a1f;
+    color: #f6efef;
+}
+
+#add-btn:hover,
+#remove-btn:hover {
+    transform: scale(1.1);
+} 
+
+#cards-container {
+    display: flex;
+    column-gap: 16px;
+}
+
+.card {
+    padding: 16px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 2px rgb(116, 114, 114);
+}

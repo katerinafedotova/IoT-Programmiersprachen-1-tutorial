@@ -12,12 +12,9 @@ function setup() {
 
 function draw() {
   background(1, 200, 100)
-  circle(positionLeft, positionTop, 50)
-  fill(225, 0, 0)
+  createCircle(color(220,10,10), positionLeft, positionBottom)
+  createCircle(color(10,10,220), positionRight, positionTop)
   moveCircleRight()
-
-  circle(positionRight, positionBottom, 50)
-  fill(0, 0, 225)
   moveCircleLeft()
 
   if (positionLeft === positionRight){
@@ -28,6 +25,11 @@ function draw() {
     positionTop = positionTop + 1
     positionBottom = positionBottom - 1
   }
+}
+
+function createCircle(color, positionX, positionY){
+  fill(color)
+  circle(positionX, positionY, 50)
 }
 
 function moveCircleRight(){

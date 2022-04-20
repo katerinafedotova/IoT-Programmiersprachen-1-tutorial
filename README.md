@@ -25,7 +25,8 @@ p5.js exercise for datatypes & conditionals
 ## Tutorial 5
 Loops exercises
 
-Basic DOM functions for selecting, creating, appending and style change of an element
+Basic js DOM functions for selecting, creating, appending and style change of an element:
+```document.querySelector```, ```document.getElementById```, ```document.createElement```, ```parentElement.appendChild(childElement)```, ```element.innerHTML```, ```element.classList.add```, 
 
 ## Useful links
 [MDN Web Docs](https://developer.mozilla.org/) <br>

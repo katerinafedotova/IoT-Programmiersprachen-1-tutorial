@@ -5,8 +5,8 @@ const cardsContainer = document.getElementById('cards-container')
 // document.querySelector('your-class')
 
 const addButton = document.getElementById('add-btn')
-
 const removeButton = document.getElementById('remove-btn')
+const toggleBth = document.getElementById('toggle-btn')
 
 const createCards = () => {
     removeCards()
@@ -24,11 +24,24 @@ const createCards = () => {
 
 const removeCards = () => {
     // check if cardsContainer has child elements 
-    if (cardsContainer.hasChildNodes()){
+    if (cardsContainer.hasChildNodes()) {
         //remove child elements 
-        while (cardsContainer.firstChild){
+        while (cardsContainer.firstChild) {
             cardsContainer.removeChild(cardsContainer.firstChild)
         }
+    }
+}
+
+const toggleClass = () => {
+    if (!cardsContainer.hasChildNodes()) {
+        return
+    }
+
+    const cards = document.querySelectorAll('.card')
+
+    console.log(cards)
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].classList.toggle('card--dark')
     }
 }
 
@@ -37,4 +50,4 @@ const removeCards = () => {
 // element.addEventListener(event, function)
 addButton.addEventListener('click', createCards)
 removeButton.addEventListener('click', removeCards)
-
+toggleBth.addEventListener('click', toggleClass)

@@ -4,17 +4,17 @@ const todos = [
     {
         task: "Buy bread",
         person: "Maria",
-        done: "false"
+        done: false
     },
     {
         task: "Clean the house",
         person: "David",
-        done: "true"
+        done: true
     },
     {
         task: "Wash the car",
         person: "Andry",
-        done: "false"
+        done: false
     }
 ]
 console.log('initial todos ', todos)
@@ -28,7 +28,7 @@ function addToDo(todo) {
 addToDo({
     task: "Walk the dog",
     person: "Andry",
-    done: "true"
+    done: true
 })
 
 console.log('todos after add ', todos)

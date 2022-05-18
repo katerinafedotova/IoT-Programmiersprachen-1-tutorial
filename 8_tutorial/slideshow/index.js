@@ -1,19 +1,62 @@
-// create array of images paths, further "images"
+const images = [
+    {
+        src: "./assets/1.jpeg",
+        alt: "sacura tree",
+        description: "This is a sacura tree."
+    },
+    {
+        src: "./assets/2.jpeg",
+        alt: "forest rapids",
+        description: "These are forest rapids."
+    },
+    {
+        src: "./assets/3.jpeg",
+        alt: "lake in the mountains",
+        description: "This is a lake in the mountains."
+    },
+    {
+        src: "./assets/4.jpeg",
+        alt: "sunset in the mountains",
+        description: "This is sunset in the mountains."
+    },
+    {
+        src: "./assets/5.jpeg",
+        alt: "another lake in the mountains",
+        description: "This is another lake in the mountains."
 
-// create a global variable "currentImage" and assign to it 0
+    },
+    {
+        src: "./assets/6.jpeg",
+        alt: "lonely tree in the sunset",
+        description: "This is a lonely tree in the sunset."
+    },
+]
 
-// select with document.querySelector element with class "image"
+let currentImage = 0;
 
-// select with document.getElementById element with id "next-button" and element with id "prev-button"  
+const image = document.querySelector('.image')
+const description = document.getElementById("description")
+const nextBtn = document.getElementById("next-button")
+const prevBtn = document.getElementById("prev-button")
 
-// create function to go to next image: 
-// if statement: check if current image equals to "images" length - 1 and, if so, assign to "currentImage" value of -1
-// set image src to the "images[++currentImage]"
+const goToNextImage = () => {
+    if (currentImage === images.length - 1) {
+        currentImage = -1;
+    }
+    image.src = images[++currentImage].src
+    image.setAttribute("alt", images[currentImage].alt)
+    description.innerHTML = images[currentImage].description
+}
 
-// create function to go to prev image: 
-// if statement: check if current image equals to 0 and, if so, assign to "currentImage value" of length of "images"
-// set image src to the "images[--currentImage]"
+const goToPrevImage = () => {
+    if (currentImage === 0) {
+        currentImage = images.length;
+    }
 
-// add event listener to the next button for click event and to it the corresponding function 
+    image.src = images[--currentImage].src
+    image.setAttribute("alt", images[currentImage].alt)
+    description.innerHTML = images[currentImage].description
+}
 
-// add event listener to the prev button for click event and to it the corresponding function 
+nextBtn.addEventListener("click", goToNextImage)
+prevBtn.addEventListener("click", goToPrevImage)

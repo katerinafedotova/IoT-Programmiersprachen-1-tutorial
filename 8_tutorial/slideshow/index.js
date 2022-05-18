@@ -44,8 +44,7 @@ const goToNextImage = () => {
         currentImage = -1;
     }
     image.src = images[++currentImage].src
-    image.setAttribute("alt", images[currentImage].alt)
-    description.innerHTML = images[currentImage].description
+    updateDescriptionAndAlt()
 }
 
 const goToPrevImage = () => {
@@ -54,6 +53,10 @@ const goToPrevImage = () => {
     }
 
     image.src = images[--currentImage].src
+    updateDescriptionAndAlt()
+}
+
+const updateDescriptionAndAlt = () => {
     image.setAttribute("alt", images[currentImage].alt)
     description.innerHTML = images[currentImage].description
 }

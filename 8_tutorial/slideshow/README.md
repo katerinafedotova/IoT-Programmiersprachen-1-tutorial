@@ -17,7 +17,7 @@ The slideshow should work as follows: when you click on the ```Next``` button, t
 ## Algorithm
 1. Create an array of the paths to your images.
 2. Select ```Prev``` and ```Next``` buttons with ```document.getElementById``` and the image with ```document.querySelector```.
-3. You need to keep track of the current image: create a global variable ```currentImage``` for it and assign to it the initial value of ```1```. The value of this variable is going to change, so be careful when choosing between ```const``` and ```let```. 
+3. You need to keep track of the current image: create a global variable ```currentImage``` for it and assign to it the initial value of ```0```. The value of this variable is going to change, so be careful when choosing between ```const``` and ```let```. 
 4. Please create 2 functions (for now without any content): 
 - the one to go to the next image (further (1))
 - the second one is to go to the prev image (further (2))

@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+@keyframes colorChange {
+    from {
+        background-color: #3b5fad;
+    }
+
+    to {
+        background-color: #f0f092;
+    }
+}
+
+.color-change {
+    width: 200px;
+    height: 200px;
+    background-color: #3b5fad;
+    animation-name: colorChange;
+    animation-duration: 4s;
+}
+
+@keyframes colorsChange {
+    25% {
+        background-color: #c92c2c;
+    }
+
+    50% {
+        background-color: #189f18;
+    }
+
+    75% {
+        background-color: #2222d7;
+    }
+
+    100% {
+        background-color: #d6a4d6;
+    }
+}
+
+.color-change-percentage {
+    width: 200px;
+    height: 200px;
+    background-color: #c92c2c;
+    animation-name: colorsChange;
+    animation-duration: 10s;
+    /* add how many times animation should run */
+    animation-iteration-count: 3;
+    /* specify name and make it infinite */
+    animation: colorsChange 5s infinite;
+}
+
+@keyframes rightMove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 700px;
+    }
+}
+
+.right-move {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(221, 114, 196);
+    position: relative;
+    animation: rightMove 5s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bottomMove {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 700px;
+    }
+}
+
+.bottom-move {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(114, 221, 143);
+    position: relative;
+    animation: bottomMove 5s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(900deg);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+.bottom-move {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(39, 147, 68);
+    position: relative;
+    animation: rotate 5s infinite;
+    animation-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+@keyframes squareMoves {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.square-moves {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: squareMoves 4s infinite;
+    /* sets the number of times an animation sequence should be played before stopping. */
+    /* animation-iteration-count: 2; */
+    animation-direction: alternate;
+}

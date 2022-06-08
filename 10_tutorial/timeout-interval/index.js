@@ -19,6 +19,8 @@ const startTimer = () => {
 const stopTimer = () => {
     startTimerBtn.removeAttribute("disabled")
     clearInterval(interval)
+    counter = 0
+    timer.innerHTML = counter
     setTimeout(() => {
         helperText.innerHTML = "Timer stopped"
     }, 1000)

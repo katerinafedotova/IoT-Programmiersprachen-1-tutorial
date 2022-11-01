@@ -1,13 +1,14 @@
 # Remember Your Travel. Task description.
 
-Create a website using HTML and CSS with the structure displayed below. 
+Create a website using HTML and CSS. Use [this version](https://remeber-your-travel-kmeq6ptqq-katerinafedotova.vercel.app/) as an example of how your webpage is supposed to look in terms of structure and content. You are free to be creative and come up with a different website idea, try different fonts, colors, images.
 
-You can use [this version](https://remeber-your-travel-kmeq6ptqq-katerinafedotova.vercel.app/) as an example but also feel free to be creative and try different fonts, colors, images (sample ones available in ```./assets```) or also website idea (important is to follow the HTML structure offered).
-
-## Important
-Please do development in the **separate branch** (e.g., ```develop```). As soon as you are finished, create a Pull Request to ```main``` branch and add me ([katerinafedotova](https://github.com/katerinafedotova)) as your reviewer. DO NOT merge the Pull Request.
+## Important / Best practices
+Please do development in the **separate branch** (e.g., ```develop```). If you would like to get code review, as soon as you are finished, create a Pull Request to ```main``` branch and add me ([katerinafedotova](https://github.com/katerinafedotova)) as your reviewer. DO NOT merge the Pull Request.
 
 Make commits for **each particular feature/ fix** added (e.g. "Add HTML structure", "Add styling for header", "Fix display of background image") and NOT one final commit when everything is ready.
+
+## Deadline
+Wednesday 9.11.2022 EOD
 
 ## Useful
 Format your code using:
@@ -19,6 +20,12 @@ Format your code using:
 ## Website structure
 
 Use semantic tags (```<header>, <main>, <section>, <footer>, <nav>```)
+
+### SPOILERS BELOW!!! 
+Below you will find the guideline about which HTML tags or CSS properties you're supposed to use. Feel free to first start coding on your own and then check it on the way/ at the end. 
+
+<details>
+  <summary>Click to see the guideline</summary>
 
 ### **Header**
 Includes logo or ```<h1>```(e.g., Remember your travel) and ```<button>```(e.g., Add new destination)
@@ -59,5 +66,4 @@ margin, display (flex), flex-direction, justify-content, background-image, font-
 ### **Hover**
 All the interactions are done with [pseudo-class ```:hover```](https://www.w3schools.com/cssref/sel_hover.asp) and CSS properties ```transform```, ```background-color``` and ```text-shadow```.
 
-## Deadline
-Wednesday 13.04.2022 EOD
+</details>

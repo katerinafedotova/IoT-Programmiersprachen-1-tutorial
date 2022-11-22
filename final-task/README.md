@@ -1,5 +1,5 @@
-# Gem puzzle
-You will implement the classical Gem Puzzle Game https://en.wikipedia.org/wiki/15_puzzle 
+# 15 puzzle
+You will implement the classical 15 Puzzle Game https://en.wikipedia.org/wiki/15_puzzle 
 
 ## About
 The 15-puzzle is a well-known game which has a long history stretching back in the 1870's. The goal of the game is to arrange a shuffled set of 15 numbered tiles in ascending order, by sliding tiles into the one vacant space on a 4 × 4 grid.

@@ -25,7 +25,7 @@ The 15-puzzle is a well-known game which has a long history stretching back in t
 
 ### Tooo hard to do but we still add it :D 
 - Instead of numbers on the tiles display a part of a picture (you can also display it together with numbers): so the goal will be to move the tiles to assemble a picture correctly
-- animate game solving process: in case you don't know how to solve the puzzle, you press a button, e.g. "Solve", and the tiles will slowly go in the right position STEP BY STEP so that you can observe the whole process
+- animate game solving process (for 3x3 field at least): in case you don't know how to solve the puzzle, you press a button, e.g. "Solve", and the tiles will slowly go in the right position STEP BY STEP so that you can observe the whole process. 
 
 ## Important
 - Do development in a separate branch and make a PR to `main` at the end 
